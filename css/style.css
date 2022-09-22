@@ -1066,6 +1066,9 @@ a {
   margin: 4em auto;
   position: relative;
 }
+.faq-section .faq-container .faq-box:not(:last-child) {
+  margin-bottom: 8px;
+}
 .faq-section .faq-container .faq-box .faq-q {
   display: flex;
   justify-content: space-between;
@@ -1075,24 +1078,28 @@ a {
   color: #fff;
   font-size: 1.625rem;
   padding: 0.8em 2.2em 0.8em 1.2em;
-  position: relative;
   cursor: pointer;
 }
+.faq-section .faq-container .faq-box .faq-q.open i {
+  transform: rotate(-45deg);
+}
+.faq-section .faq-container .faq-box .faq-q.open + .faq-a {
+  padding: 1.8em;
+  overflow: visible;
+  height: auto;
+}
 .faq-section .faq-container .faq-box .faq-q:not(:last-child) {
-  margin-bottom: 10px;
+  margin-bottom: 2px;
 }
 .faq-section .faq-container .faq-box .faq-q i {
   margin-right: -20px;
 }
 .faq-section .faq-container .faq-box .faq-a {
   display: block;
-  padding: 1.8em 3.5em 1.8em 2em;
   background: #303030;
-  text-align: left;
-  position: absolute;
-  top: 10%;
-  opacity: 0;
-  transition: max-height 0.25s cubic-bezier(0.5, 0, 0.1, 1);
+  height: 0;
+  padding: 0;
+  overflow: hidden;
 }
 .faq-section .faq-container .faq-box .faq-a:not(:last-child) {
   padding-top: 2px;
