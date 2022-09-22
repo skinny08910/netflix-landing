@@ -6,28 +6,66 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 870%;
+  width: 80%;
   max-width: 1100px;
   margin: 0 auto;
+  /*** Phone ****/
+}
+@media only screen and (max-width: 600px) {
+  .container {
+    width: 90%;
+  }
 }
 
 .menu-container {
   width: 94%;
   max-width: 1600px;
   margin: 0 auto;
+  /*** Phone ****/
+}
+@media only screen and (max-width: 600px) {
+  .menu-container {
+    width: 90%;
+  }
 }
 
 .nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  /*** Tablet/iPad ****/
+  /*** Phone ****/
 }
 .nav .logo {
   width: 170px;
+  /*** Laptop ****/
+  /*** Tablet/Ipad ****/
+  /*** Phone ****/
+  /*** Small Phone ****/
 }
 .nav .logo img {
   width: 100%;
   filter: invert(16%) sepia(88%) saturate(6726%) hue-rotate(352deg) brightness(88%) contrast(103%);
+}
+@media only screen and (max-width: 1440px) {
+  .nav .logo {
+    width: 140px;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .nav .logo {
+    width: 110px;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .nav .logo {
+    width: 110px;
+  }
+}
+@media only screen and (max-width: 550px) {
+  .nav .logo {
+    width: 90px;
+  }
 }
 .nav .right-nav {
   display: flex;
@@ -40,6 +78,8 @@ a {
   display: flex;
   align-items: center;
   position: relative;
+  /*** Phone ****/
+  /*** Small Phone ****/
 }
 .nav .right-nav .select-lang::before {
   font-family: "FontAwesome";
@@ -54,8 +94,8 @@ a {
   font-family: "FontAwesome";
   content: "\f0dd";
   color: #fff;
+  bottom: 12px;
   margin: 0 5px;
-  margin-top: -10px;
   position: absolute;
   right: 0;
   z-index: 100;
@@ -76,6 +116,28 @@ a {
   text-indent: 1px;
   text-overflow: "";
 }
+@media only screen and (max-width: 700px) {
+  .nav .right-nav .select-lang {
+    margin-right: 15px;
+  }
+  .nav .right-nav .select-lang select {
+    padding: 5px 25px;
+  }
+  .nav .right-nav .select-lang::after {
+    margin-top: -5px;
+  }
+}
+@media only screen and (max-width: 550px) {
+  .nav .right-nav .select-lang {
+    margin-right: 15px;
+  }
+  .nav .right-nav .select-lang select {
+    padding: 5px 25px;
+  }
+  .nav .right-nav .select-lang::after {
+    margin-top: -5px;
+  }
+}
 .nav .right-nav .sign-in-btn {
   font-size: 1rem;
   font-weight: 300;
@@ -84,6 +146,22 @@ a {
   background-color: #e50914;
   text-decoration: none;
   border-radius: 3px;
+  /*** Small Phone ****/
+}
+@media only screen and (max-width: 550px) {
+  .nav .right-nav .sign-in-btn {
+    padding: 6px 10px;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .nav {
+    padding: 15px 0;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .nav {
+    padding: 10px 0;
+  }
 }
 
 .jumbo-section {
@@ -98,10 +176,17 @@ a {
   background-size: cover;
   height: 750px;
   margin-top: -100px;
+  /*** Laptop ****/
+  /*** Phone ****/
+  /*** Small Phone ****/
 }
 .jumbo-section .jumbo-center {
   max-width: 800px;
   width: 750px;
+  /*** Laptop ****/
+  /*** Tabet/iPad ****/
+  /*** Phone ****/
+  /*** Small Phone ****/
 }
 .jumbo-section .jumbo-center .jumbo-title {
   font-size: 4rem;
@@ -163,21 +248,244 @@ a {
   transform: translateY(-50%);
   transition: font 0.1s ease, top 0.1s ease, transform 0.1s ease;
 }
-.jumbo-section .jumbo-center form .email-input .email-btn {
+.jumbo-section .jumbo-center form .email-input .email-btn-wrapper {
+  width: 31%;
+}
+.jumbo-section .jumbo-center form .email-input .email-btn-wrapper .email-btn {
   color: #fff;
   font-size: 1.6rem;
-  height: 66px;
-  width: 31%;
+  height: 67px;
   border-left: 1px solid #333;
   border: none;
   outline: none;
   background-color: #e50914;
   cursor: pointer;
   padding: 0 1em;
+  width: 100%;
 }
-.jumbo-section .jumbo-center form .email-input .email-btn:hover {
+.jumbo-section .jumbo-center form .email-input .email-btn-wrapper .email-btn:hover {
   background: #f40612;
   box-shadow: 0 1px 0 rgba(0, 0, 0, 0.45);
+}
+@media only screen and (max-width: 1440px) {
+  .jumbo-section .jumbo-center .jumbo-title {
+    text-align: center;
+    font-size: 3.125rem;
+    line-height: 1.1;
+    width: 80%;
+    margin: 0 auto;
+  }
+  .jumbo-section .jumbo-center .jumbo-sub-title {
+    font-size: 1.625rem;
+    font-weight: 300;
+    margin: 1.5rem 0;
+  }
+  .jumbo-section .jumbo-center form {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .jumbo-section .jumbo-center form .jumbo-info {
+    font-weight: 300;
+  }
+  .jumbo-section .jumbo-center form .email-input {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .jumbo-section .jumbo-center form .email-input .email-input-label input {
+    height: 60px;
+    padding-left: 10px;
+    width: 97%;
+  }
+  .jumbo-section .jumbo-center form .email-input .email-btn-wrapper .email-btn {
+    height: 62px;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .jumbo-section .jumbo-center {
+    width: 60%;
+    margin-top: 50px;
+  }
+  .jumbo-section .jumbo-center .jumbo-title {
+    font-size: 3.125rem;
+    line-height: 1.1;
+    width: 100%;
+  }
+  .jumbo-section .jumbo-center .jumbo-sub-title {
+    font-size: 1.625rem;
+    font-weight: 300;
+    margin: 1.5rem 0;
+  }
+  .jumbo-section .jumbo-center form {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .jumbo-section .jumbo-center form .jumbo-info {
+    font-size: 18px;
+    line-height: 1.5;
+    font-weight: 300;
+  }
+  .jumbo-section .jumbo-center form .email-input {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .jumbo-section .jumbo-center form .email-input .email-input-label {
+    width: 100%;
+    padding-right: 0;
+  }
+  .jumbo-section .jumbo-center form .email-input .email-input-label input {
+    height: 50px;
+    margin-bottom: 15px;
+    padding-left: 10px;
+    width: 95%;
+  }
+  .jumbo-section .jumbo-center form .email-input .email-input-label input:focus + label {
+    font-size: 11px;
+    font-weight: 300;
+    top: 10px;
+  }
+  .jumbo-section .jumbo-center form .email-input .email-input-label label {
+    font-size: 14px;
+    top: 35%;
+  }
+  .jumbo-section .jumbo-center form .email-input .email-btn-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .jumbo-section .jumbo-center form .email-input .email-btn-wrapper .email-btn {
+    display: block;
+    font-size: 1rem;
+    font-weight: 300;
+    height: 40px;
+    width: 40%;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .jumbo-section .jumbo-center {
+    width: 80%;
+    margin-top: 50px;
+  }
+  .jumbo-section .jumbo-center .jumbo-title {
+    font-size: 3.125rem;
+    line-height: 1.1;
+  }
+  .jumbo-section .jumbo-center .jumbo-sub-title {
+    font-size: 1.625rem;
+    font-weight: 300;
+    margin: 1.5rem 0;
+  }
+  .jumbo-section .jumbo-center form .jumbo-info {
+    font-size: 18px;
+    line-height: 1.5;
+    font-weight: 300;
+  }
+  .jumbo-section .jumbo-center form .email-input {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .jumbo-section .jumbo-center form .email-input .email-input-label {
+    width: 100%;
+    padding-right: 0;
+  }
+  .jumbo-section .jumbo-center form .email-input .email-input-label input {
+    height: 50px;
+    margin-bottom: 15px;
+    padding-left: 10px;
+    width: 95%;
+  }
+  .jumbo-section .jumbo-center form .email-input .email-input-label input:focus + label {
+    font-size: 11px;
+    font-weight: 300;
+    top: 10px;
+  }
+  .jumbo-section .jumbo-center form .email-input .email-input-label label {
+    font-size: 14px;
+    top: 35%;
+  }
+  .jumbo-section .jumbo-center form .email-input .email-btn-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .jumbo-section .jumbo-center form .email-input .email-btn-wrapper .email-btn {
+    font-size: 1rem;
+    font-weight: 300;
+    height: 40px;
+    width: 40%;
+  }
+}
+@media only screen and (max-width: 550px) {
+  .jumbo-section .jumbo-center {
+    width: 90%;
+  }
+  .jumbo-section .jumbo-center .jumbo-title {
+    font-size: 1.75rem;
+    line-height: 1.1;
+  }
+  .jumbo-section .jumbo-center .jumbo-sub-title {
+    font-size: 1.125rem;
+    font-weight: 300;
+    margin: 1.5rem 0;
+  }
+  .jumbo-section .jumbo-center form .jumbo-info {
+    font-size: 18px;
+    font-weight: 300;
+  }
+  .jumbo-section .jumbo-center form .email-input {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .jumbo-section .jumbo-center form .email-input .email-input-label {
+    width: 100%;
+    padding-right: 0;
+  }
+  .jumbo-section .jumbo-center form .email-input .email-input-label input {
+    height: 50px;
+    margin-bottom: 15px;
+    padding-left: 10px;
+    width: 95%;
+  }
+  .jumbo-section .jumbo-center form .email-input .email-input-label input:focus + label {
+    font-size: 11px;
+    font-weight: 300;
+    top: 10px;
+  }
+  .jumbo-section .jumbo-center form .email-input .email-input-label label {
+    font-size: 14px;
+    top: 35%;
+  }
+  .jumbo-section .jumbo-center form .email-input .email-btn-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .jumbo-section .jumbo-center form .email-input .email-btn-wrapper .email-btn {
+    font-size: 1rem;
+    font-weight: 300;
+    height: 40px;
+    width: 45%;
+  }
+}
+@media only screen and (max-width: 1440px) {
+  .jumbo-section {
+    height: 700px;
+    margin-top: -107px;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .jumbo-section {
+    height: 700px;
+    margin-top: -107px;
+  }
+}
+@media only screen and (max-width: 550px) {
+  .jumbo-section {
+    height: 550px;
+    margin-top: -77px;
+  }
 }
 
 .movie-tv-s-section {
@@ -186,6 +494,9 @@ a {
   border-bottom: 8px solid #222;
   padding-top: 20px;
   padding-bottom: 70px;
+  /*** Tablet/iPad ****/
+  /*** Phone ****/
+  /*** Small Phone ****/
 }
 .movie-tv-s-section .movie-info {
   width: 45%;
@@ -223,12 +534,88 @@ a {
   transform: translate(-50%, -50%);
   width: 100%;
 }
+@media only screen and (max-width: 900px) {
+  .movie-tv-s-section {
+    padding: 50px 0;
+  }
+  .movie-tv-s-section .container {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+  }
+  .movie-tv-s-section .movie-info {
+    text-align: center;
+    width: 100%;
+  }
+  .movie-tv-s-section .movie-info .movie-info-title {
+    font-size: 2.5rem;
+  }
+  .movie-tv-s-section .movie-info .movie-info-sub-title {
+    font-size: 1.25rem;
+    font-weight: 300;
+  }
+  .movie-tv-s-section .movie-video {
+    width: 90%;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .movie-tv-s-section {
+    padding: 50px 0;
+  }
+  .movie-tv-s-section .container {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+  }
+  .movie-tv-s-section .movie-info {
+    text-align: center;
+    width: 100%;
+  }
+  .movie-tv-s-section .movie-info .movie-info-title {
+    font-size: 2.5rem;
+  }
+  .movie-tv-s-section .movie-info .movie-info-sub-title {
+    font-size: 1.25rem;
+    font-weight: 300;
+  }
+  .movie-tv-s-section .movie-video {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 550px) {
+  .movie-tv-s-section {
+    padding: 50px 0;
+  }
+  .movie-tv-s-section .container {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+  }
+  .movie-tv-s-section .movie-info {
+    text-align: center;
+    width: 100%;
+  }
+  .movie-tv-s-section .movie-info .movie-info-title {
+    font-size: 1.625rem;
+  }
+  .movie-tv-s-section .movie-info .movie-info-sub-title {
+    font-size: 1.625rem;
+    font-weight: 300;
+  }
+  .movie-tv-s-section .movie-video {
+    width: 100%;
+  }
+}
 
 .download-section {
   background-color: #000;
   border-bottom: 8px solid #222;
   padding-top: 20px;
   padding-bottom: 70px;
+  /*** Laptop ****/
+  /*** Tablet/iPad ****/
+  /*** Phone ****/
+  /*** Small Phone ****/
 }
 .download-section .download-info {
   width: 50%;
@@ -298,11 +685,109 @@ a {
 .download-section .download-img .download-card .download-icon {
   width: 48px;
 }
+@media only screen and (max-width: 1440px) {
+  .download-section {
+    padding: 50px 0;
+  }
+  .download-section .container {
+    width: 80%;
+  }
+  .download-section .download-img {
+    margin-left: -80px;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .download-section {
+    padding: 50px 0;
+  }
+  .download-section .container {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    width: 80%;
+  }
+  .download-section .download-info {
+    width: 100%;
+    text-align: center;
+    order: 1;
+  }
+  .download-section .download-info .download-info-title {
+    font-size: 2.5rem;
+  }
+  .download-section .download-info .download-info-sub-title {
+    font-size: 1.25rem;
+    font-weight: 300;
+  }
+  .download-section .download-img {
+    width: 80%;
+    margin-left: 0;
+    order: 2;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .download-section {
+    padding: 50px 0;
+  }
+  .download-section .container {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    width: 90%;
+  }
+  .download-section .download-info {
+    width: 100%;
+    text-align: center;
+    order: 1;
+  }
+  .download-section .download-info .download-info-title {
+    font-size: 2.5rem;
+  }
+  .download-section .download-info .download-info-sub-title {
+    font-size: 1.25rem;
+    font-weight: 300;
+  }
+  .download-section .download-img {
+    width: 100%;
+    margin-left: 0;
+    order: 2;
+  }
+}
+@media only screen and (max-width: 550px) {
+  .download-section {
+    padding: 50px 0;
+  }
+  .download-section .container {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    width: 90%;
+  }
+  .download-section .download-info {
+    width: 100%;
+    text-align: center;
+    order: 1;
+  }
+  .download-section .download-info .download-info-title {
+    font-size: 1.625rem;
+  }
+  .download-section .download-info .download-info-sub-title {
+    font-size: 1.625rem;
+    font-weight: 300;
+  }
+  .download-section .download-img {
+    width: 100%;
+    margin-left: 0;
+    order: 2;
+  }
+}
 
 .device-section {
   background-color: #000;
   border-bottom: 8px solid #222;
   padding: 60px 0;
+  /*** Tablet/iPad ****/
+  /*** Phone ****/
+  /*** Small Phone ****/
 }
 .device-section .device-info {
   width: 45%;
@@ -340,11 +825,98 @@ a {
   transform: translate(-50%, -50%);
   width: 100%;
 }
+@media only screen and (max-width: 900px) {
+  .device-section {
+    padding: 50px 0;
+  }
+  .device-section .container {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    width: 80%;
+  }
+  .device-section .device-info {
+    width: 100%;
+    text-align: center;
+    order: 1;
+  }
+  .device-section .device-info .device-info-title {
+    font-size: 2.5rem;
+  }
+  .device-section .device-info .device-info-sub-title {
+    font-size: 1.25rem;
+    font-weight: 300;
+  }
+  .device-section .device-video {
+    width: 80%;
+    margin-left: 0;
+    order: 2;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .device-section {
+    padding: 50px 0;
+  }
+  .device-section .container {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    width: 90%;
+  }
+  .device-section .device-info {
+    width: 100%;
+    text-align: center;
+    order: 1;
+  }
+  .device-section .device-info .device-info-title {
+    font-size: 2.5rem;
+  }
+  .device-section .device-info .device-info-sub-title {
+    font-size: 1.25rem;
+    font-weight: 300;
+  }
+  .device-section .device-video {
+    width: 100%;
+    margin-left: 0;
+    order: 2;
+  }
+}
+@media only screen and (max-width: 550px) {
+  .device-section {
+    padding: 50px 0;
+  }
+  .device-section .container {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    width: 90%;
+  }
+  .device-section .device-info {
+    width: 100%;
+    text-align: center;
+    order: 1;
+  }
+  .device-section .device-info .device-info-title {
+    font-size: 1.625rem;
+  }
+  .device-section .device-info .device-info-sub-title {
+    font-size: 1.625rem;
+    font-weight: 300;
+  }
+  .device-section .device-video {
+    width: 100%;
+    margin-left: 0;
+    order: 2;
+  }
+}
 
 .kid-section {
   background-color: #000;
   border-bottom: 8px solid #222;
   padding: 70px 0;
+  /*** Tablet/iPad ****/
+  /*** Phone ****/
+  /*** Small Phone ****/
 }
 .kid-section .kid-info {
   width: 50%;
@@ -370,10 +942,98 @@ a {
 .kid-section .kid-img img {
   width: 100%;
 }
+@media only screen and (max-width: 900px) {
+  .kid-section {
+    padding: 50px 0;
+  }
+  .kid-section .container {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    width: 80%;
+  }
+  .kid-section .kid-info {
+    width: 100%;
+    text-align: center;
+    order: 1;
+  }
+  .kid-section .kid-info .kid-info-title {
+    font-size: 2.5rem;
+  }
+  .kid-section .kid-info .kid-info-sub-title {
+    font-size: 1.25rem;
+    font-weight: 300;
+  }
+  .kid-section .kid-img {
+    width: 80%;
+    margin-left: 0;
+    order: 2;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .kid-section {
+    padding: 50px 0;
+  }
+  .kid-section .container {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    width: 90%;
+  }
+  .kid-section .kid-info {
+    width: 100%;
+    text-align: center;
+    order: 1;
+  }
+  .kid-section .kid-info .kid-info-title {
+    font-size: 2.5rem;
+  }
+  .kid-section .kid-info .kid-info-sub-title {
+    font-size: 1.25rem;
+    font-weight: 300;
+  }
+  .kid-section .kid-img {
+    width: 100%;
+    margin-left: 0;
+    order: 2;
+  }
+}
+@media only screen and (max-width: 550px) {
+  .kid-section {
+    padding: 50px 0;
+  }
+  .kid-section .container {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    width: 90%;
+  }
+  .kid-section .kid-info {
+    width: 100%;
+    text-align: center;
+    order: 1;
+  }
+  .kid-section .kid-info .kid-info-title {
+    font-size: 1.625rem;
+  }
+  .kid-section .kid-info .kid-info-sub-title {
+    font-size: 1.625rem;
+    font-weight: 300;
+  }
+  .kid-section .kid-img {
+    width: 100%;
+    margin-left: 0;
+    order: 2;
+  }
+}
 
 .faq-section {
   background-color: #000;
   padding: 70px 0;
+  /*** Laptop ****/
+  /*** Tablet/iPad ****/
+  /*** Phone ****/
+  /*** Small Phone ****/
 }
 .faq-section .faq-title {
   color: #fff;
@@ -483,27 +1143,237 @@ a {
   transform: translateY(-50%);
   transition: font 0.1s ease, top 0.1s ease, transform 0.1s ease;
 }
-.faq-section .sign-up-form form .email-input .email-btn {
+.faq-section .sign-up-form form .email-input .email-btn-wrapper {
+  width: 31%;
+}
+.faq-section .sign-up-form form .email-input .email-btn-wrapper .email-btn {
   color: #fff;
   font-size: 1.6rem;
-  height: 66px;
-  width: 31%;
+  height: 67px;
   border-left: 1px solid #333;
   border: none;
   outline: none;
   background-color: #e50914;
   cursor: pointer;
   padding: 0 1em;
+  width: 100%;
 }
-.faq-section .sign-up-form form .email-input .email-btn:hover {
+.faq-section .sign-up-form form .email-input .email-btn-wrapper .email-btn:hover {
   background: #f40612;
   box-shadow: 0 1px 0 rgba(0, 0, 0, 0.45);
+}
+@media only screen and (max-width: 1440px) {
+  .faq-section .sign-up-form form {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .faq-section .sign-up-form form .jumbo-info {
+    font-weight: 300;
+  }
+  .faq-section .sign-up-form form .email-input {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .faq-section .sign-up-form form .email-input .email-input-label input {
+    height: 60px;
+    padding-left: 10px;
+    width: 97%;
+  }
+  .faq-section .sign-up-form form .email-input .email-btn-wrapper .email-btn {
+    height: 62px;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .faq-section {
+    padding: 50px 0;
+  }
+  .faq-section .faq-title {
+    font-size: 2.5rem;
+  }
+  .faq-section .faq-container {
+    width: 80%;
+    margin: 3em auto;
+  }
+  .faq-section .faq-container .faq-box .faq-q {
+    font-size: 1.25rem;
+  }
+  .faq-section .faq-container .faq-box .faq-a p {
+    font-size: 1.25rem;
+  }
+  .faq-section .sign-up-form {
+    width: 60%;
+  }
+  .faq-section .sign-up-form form .jumbo-info {
+    font-size: 23px;
+    line-height: 1.2;
+    font-weight: 300;
+  }
+  .faq-section .sign-up-form form .email-input {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .faq-section .sign-up-form form .email-input .email-input-label {
+    width: 100%;
+    padding-right: 0;
+  }
+  .faq-section .sign-up-form form .email-input .email-input-label input {
+    height: 50px;
+    margin-bottom: 15px;
+    padding-left: 10px;
+    width: 95%;
+  }
+  .faq-section .sign-up-form form .email-input .email-input-label input:focus + label {
+    font-size: 11px;
+    font-weight: 300;
+    top: 10px;
+  }
+  .faq-section .sign-up-form form .email-input .email-input-label label {
+    font-size: 14px;
+    top: 35%;
+  }
+  .faq-section .sign-up-form form .email-input .email-btn-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .faq-section .sign-up-form form .email-input .email-btn-wrapper .email-btn {
+    font-size: 1rem;
+    font-weight: 300;
+    height: 40px;
+    width: 40%;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .faq-section {
+    padding: 50px 0;
+  }
+  .faq-section .faq-title {
+    font-size: 2.5rem;
+  }
+  .faq-section .faq-container {
+    width: 80%;
+    margin: 3em auto;
+  }
+  .faq-section .faq-container .faq-box .faq-q {
+    font-size: 1.25rem;
+  }
+  .faq-section .faq-container .faq-box .faq-a p {
+    font-size: 1.25rem;
+  }
+  .faq-section .sign-up-form {
+    width: 80%;
+  }
+  .faq-section .sign-up-form form .jumbo-info {
+    font-size: 18px;
+    line-height: 1.2;
+    font-weight: 300;
+  }
+  .faq-section .sign-up-form form .email-input {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .faq-section .sign-up-form form .email-input .email-input-label {
+    width: 100%;
+    padding-right: 0;
+  }
+  .faq-section .sign-up-form form .email-input .email-input-label input {
+    height: 50px;
+    margin-bottom: 15px;
+    padding-left: 10px;
+    width: 95%;
+  }
+  .faq-section .sign-up-form form .email-input .email-input-label input:focus + label {
+    font-size: 11px;
+    font-weight: 300;
+    top: 10px;
+  }
+  .faq-section .sign-up-form form .email-input .email-input-label label {
+    font-size: 14px;
+    top: 35%;
+  }
+  .faq-section .sign-up-form form .email-input .email-btn-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .faq-section .sign-up-form form .email-input .email-btn-wrapper .email-btn {
+    font-size: 1rem;
+    font-weight: 300;
+    height: 40px;
+    width: 40%;
+  }
+}
+@media only screen and (max-width: 550px) {
+  .faq-section {
+    padding: 50px 0;
+  }
+  .faq-section .faq-title {
+    font-size: 1.625rem;
+  }
+  .faq-section .faq-container {
+    width: 90%;
+    margin: 3em auto;
+  }
+  .faq-section .faq-container .faq-box .faq-q {
+    font-size: 1.25rem;
+  }
+  .faq-section .faq-container .faq-box .faq-a p {
+    font-size: 1.25rem;
+  }
+  .faq-section .sign-up-form {
+    width: 90%;
+  }
+  .faq-section .sign-up-form form .jumbo-info {
+    font-size: 18px;
+    line-height: 1.2;
+    font-weight: 300;
+  }
+  .faq-section .sign-up-form form .email-input {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .faq-section .sign-up-form form .email-input .email-input-label {
+    width: 100%;
+    padding-right: 0;
+  }
+  .faq-section .sign-up-form form .email-input .email-input-label input {
+    height: 50px;
+    margin-bottom: 15px;
+    padding-left: 10px;
+    width: 95%;
+  }
+  .faq-section .sign-up-form form .email-input .email-input-label input:focus + label {
+    font-size: 11px;
+    font-weight: 300;
+    top: 10px;
+  }
+  .faq-section .sign-up-form form .email-input .email-input-label label {
+    font-size: 14px;
+    top: 35%;
+  }
+  .faq-section .sign-up-form form .email-input .email-btn-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .faq-section .sign-up-form form .email-input .email-btn-wrapper .email-btn {
+    font-size: 1rem;
+    font-weight: 300;
+    height: 40px;
+    width: 45%;
+  }
 }
 
 .footer {
   border-top: 8px solid #222;
   padding: 70px 45px;
   background-color: #000;
+  /*** Tablet/iPad ****/
+  /*** Phone ****/
+  /*** Small Phone ****/
 }
 .footer .footer-container {
   width: 60%;
@@ -542,12 +1412,12 @@ a {
   text-decoration: underline;
 }
 .footer .select-lang {
-  display: flex;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
   border: 2px solid rgb(34, 34, 34);
   align-items: center;
-  width: 15%;
+  padding: 0 30px;
   position: relative;
 }
 .footer .select-lang::before {
@@ -564,7 +1434,7 @@ a {
   content: "\f0dd";
   color: #999;
   margin: 0 10px;
-  margin-top: -10px;
+  bottom: 20px;
   position: absolute;
   right: 0;
   z-index: 100;
@@ -586,6 +1456,55 @@ a {
   -moz-appearance: none;
   text-indent: 1px;
   text-overflow: "";
+}
+@media only screen and (max-width: 900px) {
+  .footer {
+    padding: 50px 10px;
+  }
+  .footer .footer-container {
+    width: 80%;
+  }
+  .footer .footer-wrapper {
+    display: flex;
+  }
+  .footer .select-lang {
+    display: inline-flex;
+    padding: 0 25px;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .footer {
+    padding: 50px 10px;
+  }
+  .footer .footer-container {
+    width: 90%;
+  }
+  .footer .footer-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+  }
+  .footer .select-lang {
+    display: inline-flex;
+    padding: 0 25px;
+  }
+}
+@media only screen and (max-width: 550px) {
+  .footer {
+    padding: 50px 10px;
+  }
+  .footer .footer-container {
+    width: 90%;
+  }
+  .footer .footer-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+  }
+  .footer .select-lang {
+    display: inline-flex;
+    padding: 0 25px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
