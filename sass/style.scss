@@ -535,6 +535,22 @@ a {
         }
       }
     }
+
+    /*** Extra Small Phone ****/
+    @media only screen and (max-width: 400px) {
+      form {
+        .email-input {
+          flex-wrap: wrap;
+          justify-content: center;
+
+          .email-btn-wrapper {
+            .email-btn {
+              width: 50%;
+            }
+          }
+        }
+      }
+    }
   }
 
   /*** Laptop ****/
@@ -890,6 +906,17 @@ a {
       width: 100%;
       margin-left: 0;
       order: 2;
+    }
+  }
+
+  /*** Extra Small Phone ****/
+  @media only screen and (max-width: 400px) {
+    .download-img {
+      .download-card {
+        .str-thing-poster {
+          width: 40px;
+        }
+      }
     }
   }
 }
@@ -1601,6 +1628,24 @@ a {
               font-weight: 300;
               height: 40px;
               width: 45%;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  /*** Extra Small Phone ****/
+  @media only screen and (max-width: 400px) {
+    .sign-up-form {
+      form {
+        .email-input {
+          flex-wrap: wrap;
+          justify-content: center;
+
+          .email-btn-wrapper {
+            .email-btn {
+              width: 50%;
             }
           }
         }

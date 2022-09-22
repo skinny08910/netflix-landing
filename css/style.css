@@ -187,6 +187,7 @@ a {
   /*** Tabet/iPad ****/
   /*** Phone ****/
   /*** Small Phone ****/
+  /*** Extra Small Phone ****/
 }
 .jumbo-section .jumbo-center .jumbo-title {
   font-size: 4rem;
@@ -469,6 +470,15 @@ a {
     width: 45%;
   }
 }
+@media only screen and (max-width: 400px) {
+  .jumbo-section .jumbo-center form .email-input {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .jumbo-section .jumbo-center form .email-input .email-btn-wrapper .email-btn {
+    width: 50%;
+  }
+}
 @media only screen and (max-width: 1440px) {
   .jumbo-section {
     height: 700px;
@@ -616,6 +626,7 @@ a {
   /*** Tablet/iPad ****/
   /*** Phone ****/
   /*** Small Phone ****/
+  /*** Extra Small Phone ****/
 }
 .download-section .download-info {
   width: 50%;
@@ -778,6 +789,11 @@ a {
     width: 100%;
     margin-left: 0;
     order: 2;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .download-section .download-img .download-card .str-thing-poster {
+    width: 40px;
   }
 }
 
@@ -1034,6 +1050,7 @@ a {
   /*** Tablet/iPad ****/
   /*** Phone ****/
   /*** Small Phone ****/
+  /*** Extra Small Phone ****/
 }
 .faq-section .faq-title {
   color: #fff;
@@ -1364,6 +1381,15 @@ a {
     font-weight: 300;
     height: 40px;
     width: 45%;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .faq-section .sign-up-form form .email-input {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .faq-section .sign-up-form form .email-input .email-btn-wrapper .email-btn {
+    width: 50%;
   }
 }
 
